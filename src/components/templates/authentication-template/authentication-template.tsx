@@ -1,17 +1,24 @@
 import React, { ReactElement } from 'react'
 import StyledAuthenticationTemplate from './authentication-template.styles'
-import Title from '../../atoms/title'
+// import Title from '../../atoms/title'
 import LoginForm from '../../organisms/login-form'
+// import SignUpForm from '../../organisms/sign-up-form'
+// import Bubbles from '../../organisms/bubbles'
+import Hero from '../../organisms/hero'
 
 interface Props {
-    title: string
+    heroData: string[]
 }
 
-export default function AuthenticationTemplate({title}: Props): ReactElement {
+export default function AuthenticationTemplate({heroData}: Props): ReactElement {
     return (
         <StyledAuthenticationTemplate>
-            <Title title={title}/>
-            <LoginForm />
+            <Hero heroData={heroData}/>
+            {/* <Bubbles /> */}
+            {/* <LoginForm /> */}
+            {/* <SignUpForm /> */}
+
+            {/* <Title title={title}/> */}
         </StyledAuthenticationTemplate>
     )
 }

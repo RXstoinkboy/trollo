@@ -2,8 +2,9 @@ import React, { ReactElement, useState } from 'react'
 import AuthenticationTemplate from '../../templates/authentication-template'
 
 export default function AuthenticationPage(): ReactElement {
-    const [title, setTitle] = useState(`Let's count some cash!`)
+    const [heroData] = useState(['Savings', 'Kept', '$imple'])
+
     return (
-        <AuthenticationTemplate title={title} />
+        <AuthenticationTemplate heroData={heroData}/>
     )
 }

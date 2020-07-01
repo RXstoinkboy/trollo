@@ -1,11 +1,14 @@
 import React from 'react';
-import AuthenticationPage from './components/pages/authentication-page'
+import Authentication from './components/pages/authentication-page'
+import {ThemeProvider} from 'styled-components'
+import theme from './utils/theme'
 
 function App() {
   return (
     <div className="wrapper">
-      <h1>hello world</h1>
-      <AuthenticationPage />
+      <ThemeProvider theme={theme}>
+        <Authentication />
+      </ThemeProvider>
     </div>
   );
 }
