@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import StyledFirstChar from './first-char.styles'
 
 interface Props {
     content: string
@@ -6,8 +7,8 @@ interface Props {
 
 export default function FirstChar({content}: Props): ReactElement {
     return (
-        <div>
+        <StyledFirstChar>
             {content}
-        </div>
+        </StyledFirstChar>
     )
 }

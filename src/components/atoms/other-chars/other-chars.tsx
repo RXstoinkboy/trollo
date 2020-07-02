@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import StyledOtherChars from './other-chars.styles'
 
 interface Props {
     content: string
@@ -6,8 +7,8 @@ interface Props {
 
 export default function OtherChars({content}: Props): ReactElement {
     return (
-        <div>
+        <StyledOtherChars>
             {content}
-        </div>
+        </StyledOtherChars>
     )
 }
