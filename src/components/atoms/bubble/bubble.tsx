@@ -1,9 +1,17 @@
-import React, { ReactElement, SVGProps } from "react";
+import React, { ReactElement } from "react";
+import StyledBubble from './bubble.styles'
+import { ThemeProvider } from "styled-components";
 
-export default function Bubble(props: SVGProps<SVGSVGElement>): ReactElement {
+export interface Props {
+    diagonal: number
+    top: number
+    left: number
+    color: string
+    content?: string
+}
+
+export default function Bubble(props: Props): ReactElement {
   return (
-    <svg width={60} height={60} fill="none" {...props}>
-      <circle cx={30} cy={30} r={30} fill="#D45B5B" />
-    </svg>
+    <StyledBubble {...props} />
   );
 }

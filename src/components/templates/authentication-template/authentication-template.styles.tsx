@@ -5,7 +5,9 @@ const StyledAuthenticationTemplate = styled.section`
     height: 100vh;
     background: ${({theme}) => theme.colors.background};
     display: flex;
+    position: relative;
     flex-direction: column;
+    overflow: hidden;
     justify-content: center;
 `
 
