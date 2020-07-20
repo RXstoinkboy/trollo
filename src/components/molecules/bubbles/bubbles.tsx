@@ -10,29 +10,28 @@ export default function Bubbles({}: Props): ReactElement {
     const theme = useContext(ThemeContext)
 
     const [settings, setSettings] = useState([
-        // zmienić z 'px' na 'em' albo %
         {
-            top: 194,
-            left: 94,
-            diagonal: 60,
+            top: 6,
+            left: 55,
+            diagonal: 18,
             color: theme.colors.main
         },
         {
-            top: 81,
-            left: 229,
-            diagonal: 120,
+            top: 49,
+            left: 60,
+            diagonal: 13,
             color: theme.colors.secondary
         },
         {
-            top: 386,
-            left: 241,
-            diagonal: 74,
+            top: 26,
+            left: 24,
+            diagonal: 10,
             color: theme.colors.thirdary
         },
         {
             top: 550,
             left: 229,
-            diagonal: 348,
+            diagonal: 40,
             color: theme.colors.main,
             content: 'start'
         },
